@@ -42,10 +42,10 @@ def main():
     print(f"Resources: {ray.cluster_resources()}")
 
     # get ray env variables
-    ray_restart = bool(os.getenv("RAY_RESTART_JOB", 0))
+    ray_restart = bool(int(os.getenv("RAY_RESTART_JOB", "0")))
     ray_job_name = os.getenv("RAY_JOB_NAME", "vllm")
     ray_route_prefix = os.getenv("RAY_ROUTE_PREFIX", "/")
-    ray_blocking = bool(os.getenv("RAY_BLOCKING", 0))
+    ray_blocking = bool(int(os.getenv("RAY_BLOCKING", "0")))
 
     # (optional) delete existing app
     if ray_restart:
