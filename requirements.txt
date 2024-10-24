@@ -1,4 +1,4 @@
 omegaconf
 ray[serve]==2.37.0
 tenacity
-vllm==0.6.2
+vllm==0.6.3
