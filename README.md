@@ -1,5 +1,8 @@
 # RayInfer: Serving vLLM with Ray for Flexible Inference
 
+## Note
+It's now archived - use [`ray.serve.llm`](https://docs.ray.io/en/latest/serve/llm/serving-llms.html) instead!
+
 ## Getting Started
 Install rayinfer with pip:
 
